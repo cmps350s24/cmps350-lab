@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Noto+Naskh+Arabic:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "IBM Plex Sans", "Noto Naskh Arabic", sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#selection {
+  display: grid;
+  grid-template-columns: 75px auto;
+  gap: 10px;
+}
+
+#country-flag {
+  margin-bottom: 15px;
+}
+
+#country-flag img {
+  max-width: 560px;
+}
+
+main table td {
+  padding: 2px 0;
+}
+
+main table th {
+  text-align: start;
+  padding-inline-end: 10px;
+  min-width: 120px;
+}
+
+main table th,
+main table td {
+  vertical-align: baseline;
+}
+
+h1 {
+  /* text-align: center; */
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}

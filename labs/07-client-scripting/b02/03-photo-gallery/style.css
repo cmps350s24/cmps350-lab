@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header button {
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+
+#gallery {
+  margin: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+#gallery img {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
