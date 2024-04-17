@@ -5,5 +5,5 @@ export async function save(...) {
 }
 
 export function render(...) {
-  const notify = (event, id) => { };
+  const callback = (event, id) => { };
 }
