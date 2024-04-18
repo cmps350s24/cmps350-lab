@@ -1,9 +1,11 @@
-export async function load(...) {
+export async function load(•••) {
 }
 
-export async function save(...) {
+export async function save(•••) {
 }
 
-export function render(...) {
+export function render(•••) {
+  •••
   const callback = (event, id) => { };
+  •••
 }

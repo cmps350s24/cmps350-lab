@@ -1,1 +1,3 @@
-document.addEventListener("DOMContentLoaded", async function () {});
+document.addEventListener("DOMContentLoaded", async function () {
+  await •••
+});
