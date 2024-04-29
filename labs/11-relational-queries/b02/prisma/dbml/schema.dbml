@@ -1,0 +1,33 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Client {
+  id String [pk]
+  firstName String [not null]
+  lastName String [not null]
+  email String [unique, not null]
+  accounts Account [not null]
+}
+
+Table Account {
+  id String [pk]
+  type String [not null]
+  balance Float [default: 0]
+  accountClient Client [not null]
+  client String [not null]
+  transactions Transaction [not null]
+}
+
+Table Transaction {
+  id String [pk]
+  type String [not null]
+  amount Float [not null]
+  date DateTime [default: `now()`]
+  transactionAccount Account [not null]
+  account String [not null]
+}
+
+Ref: Account.client > Client.id [delete: Cascade]
+
+Ref: Transaction.account > Account.id [delete: Cascade]
